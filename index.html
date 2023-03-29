@@ -1,32 +1,79 @@
 <!doctype html>
 <!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
-<html>
+
+<html lang="en">
 	<head>
 		<title> 타이틀 테스트</title>
-		<meta name = "author" content = "20220984">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset = "utf-8"> <! 언어표준>
 		<meta name = “keywords” content=“computer”>
 		<base href="https://web--kxnin.run.goorm.site/">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+		<script type="text/javascript" src="js/search.js" defer></script>
 	</head>
 	<body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<nav class="navbar navbar-expand-lg bg-light">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="#">NohJuhee</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="https://www.instagram.com/jsjsjhwhwn/"target="_blank">Insta</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://blog.naver.com/sarah19270"target="_blank">Blog</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="https://www.youtube.com/channel/UCGBzXr02j9K0Zp2W-Dbsthw"target="_blank">Youtube</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown link
+				  </a>
+				  <ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="https://www.naver.com/" target="_blank">Naver</a></li>
+					<li><a class="dropdown-item" href="https://www.daum.net/" target="_blank">daum</a></li>
+					<li><a class="dropdown-item" href="https://www.thecamp.or.kr/login/main.do" target="_blank">더캠프</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
 		<p style="text-align:left;"><font size="5em" color="blue">
 		문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의</font></p>
 		<hr>
 		<br> <! br은 줄바꿈>
 		
-		<p style="text-align:center"> 
-		<a href = "index.html" target="_blank"> <img src="img/google.png" alt="구글이미지"> </a>
+		<!p style="text-align:center" >
+		<div class="mx-auto" style="width: 200px;">
+			<a href = "index.html" target="_blank"> 
+				<img src="img/google.png" class="img-fluid" alt="구글이미지"> </a>
+		</div>
 		<! img 태그는 이미지를 삽입합니다. src = 경로, 이미지 깨지면 alt 출력>
 		<! a href 바디 안에서 사용. 위에 베이스에 지정한 위치로 다시 감>
-		</p>
-		<br>
+		
+			<br>
 		<p style ="text-align:center"> 
-		검색 : <input type = "text" name = "search" size = "55" value  =""><br></p>
+			검색 : <input type = "text" name = "search" size = "55" value  ="">
+			<button id ="search_btn" type ="button">검색</button><br>
+			<!id가 자바스크립트에서 이 버튼임을 알게 해주는 고유 ID>
+		</p>
+		<br><br>
+		<p style="text-align:center">
+			<text id = "juhee" a href="https://github.com/JuheeNoh123" target="_blank">노주희깃허브</a>
+		</p>
+		
 		<! input type = 택스트박스>
 		<br><br><br><br><br>
 		<table style = "margin-left:auto; margin-right: auto;" border="1">
 		<!테이블을 정의함>
-			<caption> 인기검색어</caption> <! 테이블 제목>
+			<caption align="top"> 인기검색어</caption> <! 테이블 제목>
 			<tbody>
 				<tr><td bgcolor = "yellow" width = "50"><b>영화</b></td>
 					<td width="80" bgcolor="skyblue">아저씨</td>
@@ -55,5 +102,14 @@
 		<p style ="text-align:right;"><font size="3em" color="red">
 		문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등</font></p>
 		<br>
+		<footer class="bg-light text-center text-lg-start">
+			<div class="text-center p-3" style="background-color:#D8D8D8;">
+				<h3 class="text-secondary">FOOTER TEST</h3>
+				© 2020 Copyright: <a class="text-dark" href="https://web--kxnin.run.goorm.site/">주희.com</a>
+				<i class="bi bi-facebook" style="color: #3b5998; font-size: 2rem;"></i>
+				<i class="bi bi-twitter" style="color: #55acee; font-size: 2rem;"></i>
+				<i class="bi bi-instagram" style="color: #ac2bac; font-size: 2rem;"></i>
+			</div>
+		</footer>
 	</body>
 </html>
