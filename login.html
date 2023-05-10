@@ -13,13 +13,21 @@
 		<script type="text/javascript" src="js/data_type.js" defer></script>
 		<script type="text/javascript" src="js/pop_up.js" defer></script>
 		<script type="text/javascript" src="js/array_test.js" defer></script>
+		<script type="text/javascript" src="js/login.js" defer></script>
 	</head>
 	
-	<body class ="text-center">
-		<br><br><br>
+	<body class ="text-center" onload="init();">
+		<br><br>
+		<div class="mx-auto" style="width: 200px;">
+			<a href = "index.html" target="_blank"> 
+				<img src="img/google.png" class="img-fluid" alt="구글이미지"> </a>
+		</div>
+		<br>
+		
 		<main class="form-signin">
-			<form>
+			<form id = "form_main">
 				<h1 class="h3 mb-3 tw-normal">로그인해줘 응애</h1>
+				<br><br><br>
 				<div class = "form-floating">
 					<input type="email" class = "form-control" id="floatingInput" placeholder="name@example.com">
 					<label for="floatingInput">Email address</label>
@@ -31,13 +39,45 @@
 				
 				<div class = "checkbox mb-3">
 					<label>
-					<input type="password" class = "form-control" id="floatingPassword" placeholder="Password">
-					</label>
+            			<input type="checkbox" value="remember-me" id="idSaveCheck"> Remember me
+          			</label>
 				</div>
-				<button class="w-100 btn btn-lg btn-primary" type="submit">로그인</button>
+				<button class="w-100 btn btn-lg btn-primary" type="button" onclick="login()">로그인</button>
 				<p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+				
+				<!-- 
+				<div class="text-center">
+				<p>Not a member? <a href="#!">Register</a></p>
+				<p>or sign up with:</p>
+				<button type="button" class="btn btn-link btn-floating mx-1">
+				  <i class="fab fa-facebook-f"></i>
+				</button>
+
+				<button type="button" class="btn btn-link btn-floating mx-1">
+				  <i class="fab fa-google"></i>
+				</button>
+
+				<button type="button" class="btn btn-link btn-floating mx-1">
+				  <i class="fab fa-twitter"></i>
+				</button>
+
+				<button type="button" class="btn btn-link btn-floating mx-1">
+				  <i class="fab fa-github"></i>
+				</button>
+				 </div>
+				-->  
 			</form>
 		</main>		
+		
+		<footer class="bg-light text-center text-lg-start">
+			<div class="text-center p-3" style="background-color:#D8D8D8;">
+				<h3 class="text-secondary">노주희 짱짱 걸</h3>
+				© 2020 Copyright: <a class="text-dark" href="https://web--kxnin.run.goorm.site/">주희.com</a>
+				<i class="bi bi-facebook" style="color: #3b5998; font-size: 2rem;"></i>
+				<i class="bi bi-twitter" style="color: #55acee; font-size: 2rem;"></i>
+				<i class="bi bi-instagram" style="color: #ac2bac; font-size: 2rem;"></i>
+			</div>
+		</footer>
 	</body>
 	
 	
