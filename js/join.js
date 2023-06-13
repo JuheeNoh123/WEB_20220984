@@ -51,9 +51,15 @@ function join(){ // 회원가입
         alert("회원가입 폼에 모든 정보를 입력해주세요.(성별, 분반 제외)");
     }else{
 		session_join_set(); // 회원가입 용 세션 생성
+		setCookie("join_email",email.value,1);
         form.submit();
+		
+		
+		
     }
 }
+
+
 
 function addJavascript(jsname) { // 자바스크립트 외부 연동
 	var th = document.getElementsByTagName('head')[0];
@@ -64,3 +70,4 @@ function addJavascript(jsname) { // 자바스크립트 외부 연동
 }
 addJavascript('/js/security.js'); // 암복호화 함수
 addJavascript('/js/session.js'); // 세션 함수
+addJavascript('/js/cookie.js'); // 쿠키 함수
