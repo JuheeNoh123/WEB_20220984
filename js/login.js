@@ -126,23 +126,23 @@ function login_count(){
 		console.log("hi")
 		var cnt = Number(1);
 		setloginCookie("login_cnt",cnt);
+		cnt = Number(glc);	//여기서 받아온 쿠키값 다시 형변환 시킨거
 	}
 	
 	else if(typeof(glc) == "undefined"){
 		console.log("hi")
 		var cnt = Number(1);
 		setloginCookie("login_cnt",cnt);
+		cnt = Number(glc);	//여기서 받아온 쿠키값 다시 형변환 시킨거
 	}
 	
-	else if(glc){
-		cnt = Number(glc);	//여기서 받아온 쿠키값 다시 형변환 시킨거
-		
-	}
-	else if(cnt>3){	//여기서 조건문 실행
+	else if(glc>=3){
 		console.log("hihi")
 		alert("로그인 가능 횟수 초과");
 		btnActive();
+		
 	}
+	
 	else{
 		return;
 	}
